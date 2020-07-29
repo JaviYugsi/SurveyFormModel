@@ -1,0 +1,260 @@
+   h1{
+  
+    text-align: center;
+    color: #2f88fa;
+  }
+  p{
+    font-size : 20px;
+  }
+  
+  body{
+    width:auto;
+    background-color:  #57dfdb ;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: 'Alegreya Sans', sans-serif;
+  
+  
+      
+  }
+  #container{
+    padding-top:20px;
+    padding-bottom:50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 50%;
+    border-radius: 15px;
+  }
+  
+  #survey-form{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 20px;
+  }
+  
+  #zona1{
+    width: 70%;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+  }
+  #zona2{
+    width: 80%;
+    display:flex;
+    flex-direction:column;
+    margin-top: 20px;
+  }
+  #fieldset1{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    border: none;
+    justify-content: space-between;
+  }
+  
+  #fieldset2{
+     display: flex;
+    flex-direction: row;
+    border: none;
+  }
+  #zona3{
+     width: 80%;
+    margin-top: 20px;
+   
+  }
+  #zona4{
+     width: 80%;
+  }
+  
+  .inputClass{
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 70px;
+    margin-bottom: 25px;
+  }
+  .linea{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+  }
+  
+  #description {
+    text-align: center;
+  }
+  
+  .fila {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    
+  }
+  .scrollDownClass {
+    width: 70%;
+    margin-left: 20px;
+    margin-right: 67px;
+    margin-bottom: 25px;
+  }
+  .textInputClass {
+    width: 70%;
+    border: 2px solid gray;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    margin-right: 70px;
+    resize: none;
+  
+  }
+  
+  .textInputClass:focus {    
+    border: 2px solid black;    
+  }
+  #columna1 {
+      width: 50%;
+      font-weight: bold;
+      font-size: 18px;
+      text-align: right;
+  }
+  #column2 {
+    width: 50%;
+    margin-left: 30px;
+  }
+
+  .column1 {
+    width:100%;
+    position: relative;
+    top: 52px;
+    
+  }
+  
+  .inputCheckClass {
+  margin-bottom: 10px;
+  margin-top: 10px;  
+  }
+  
+  #fieldSet3 {
+    border: none;
+    margin-top: 40px;
+  }
+  
+  .textInputClass2 {
+    width: 100%;
+    height: 100px;  
+    border: 2px solid gray;
+    border-radius: 4px;
+    resize: none;
+  }
+  .textInputClass2:focus {
+    
+    border: 2px solid black;
+   
+  }
+  
+  .labelTag {
+    font-weight: bold;
+    font-size: 18px;
+    width: 30%;
+    display: block;
+    text-align: right;
+      
+  }
+  .column1Text1 {
+    width: 30%;
+  }
+
+  .legends {
+    font-weight: bold;
+    font-size: 18px;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  input {
+      border: 1px solid gray;
+      border-radius: 5px;
+  }
+
+  select {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+  @media screen and (max-width: 800px){
+      .labelTag{
+          display: none;
+      }
+
+      #container{
+          width: 90%;
+      }
+
+      .inputClass{
+          width: 90%;
+          margin: 10px auto;
+      }
+      .needed-tags{
+          display: block;
+          text-align:  center;
+          font-size: 15px;
+          width: 80%;
+          margin: 0 auto;
+      }
+
+      .fila{
+          flex-direction: column;
+      }
+
+      .scrollDownClass{
+          margin: 10px auto;
+          width: 90%;
+      }
+
+      .textInputClass{
+          margin: 10px auto;
+          width: 90%;
+      }
+
+      #fieldset1{
+          flex-direction: column;
+          align-items: flex-start;
+          margin: 0 auto;
+      }
+
+      .legends{
+          font-size: 15px;
+          width: 80%;
+          margin: 0 auto;
+      }
+      #fieldset2{
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+    
+    #columna1{
+        width: 100%;
+    }
+
+    .column1{
+        top: 0;
+    }
+
+    #column2{
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    #fieldSet3{
+        margin-top: 0px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    
+  }

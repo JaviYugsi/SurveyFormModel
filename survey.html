@@ -1,0 +1,164 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet"> 
+    <link href="css/estilos.css" rel="stylesheet">
+
+    <title>
+        Responsive Survey Form
+    </title>
+
+</head>
+
+
+
+<body class="claseGeneral">
+
+<h1 id ="title"> Encuesta de satisfacción con Investiga+</h1>
+<div > 
+<p id="description">
+  InvestigaPLUS es una plataforma dedicada a hacer más fácil la vida del investigador. </br> 
+  Nuestros objetivos cambian conformen cambian las necesidades de los investigadores. </br>
+  ¿Qué tal si establecemos estos objetivos juntos?
+  </p>
+</div>
+  
+<div id="container">
+
+  <form id ="survey-form">
+    
+    <div id="zona1">
+      
+      <div class="fila">
+    <label for="name" id="name-label" class="labelTag" >Nombre:</label> 
+    <input class="inputClass" id = "name"type="text" name="name" placeholder="Nombre" required>
+      </div>
+    
+    <div class="fila">
+    <label for="email" id="email-label" class="labelTag">E-mail:</label> 
+      <input class="inputClass" type="email"id ="email" name="email" placeholder="email" required> 
+      </div>
+    <div class="fila">
+    <label for="number" id ="number-label" class="labelTag needed-tags"> Años de investigación:</label> <input class="inputClass" type ="number" id ="number" min ="0" max="4" placeholder="Número entero de años">
+    </div>
+    
+    <div class="fila">
+   <label for="dropdown" id="dropdown" class="labelTag needed-tags">
+     Provincia:
+     </label>
+     <select  class="scrollDownClass" id="dropdown" placeholder="select an option">
+      <option value="Select an Option"> Seleccione </option>
+      <option value="Sevilla" selected="selected"> Sevilla</option>
+      <option value="Málaga"> Málaga</option>
+      <option value="Granada"> Granada </option>
+      <option value="Huelva"> Huelva </option>
+      <option value="Cádiz"> Cádiz</option>
+       <option value="Almería"> Almería</option>
+       <option value="Córdoba"> Córdoba </option>
+       <option value="Jaén"> Jaén </option>
+       
+    
+    </select>
+      </div>
+      
+      <div class="fila">       
+        
+      <label for="survey-form" class="labelTag column1Text1 needed-tags" > Explique con brevedad cual es el uso habitual que hace de la aplicación: </label> <br>
+      <textarea class="textInputClass" rows="5" form =""></textarea>
+       
+  </div>
+      <div class="fila">
+   <label for="dropdown" class="labelTag needed-tags">
+     Opcion de :
+     </label>
+     <select  class="scrollDownClass" id="dropdown" placeholder="select an option">
+      <option value="" selected disabled hidden>Seleccione</option>
+      
+      <option value="Pez"> Universidad</option>
+      <option value="Conejillo"> Hospital</option>
+      <option value="Conejo"> Otros organismos Privados </option>
+      <option value="Gato"> Otros Organismos Públicos </option>
+      <option value="Perro"> Investigador por cuenta propia </option>
+       
+    
+    </select>
+      </div>
+ </div>   
+    
+  <div id="zona2">
+   
+      <legend class="legends">
+        A qué tipo de convocatorias se ha presentado con más frecuencia: 
+        </legend>
+        <fieldset id="fieldset1">
+          <div>
+        <input id="fsopt1" type="radio" name="contacto" value="ciudad">
+          <label for="fsopt1" > Convocatorias locales </label> 
+        </div>
+
+         <div>
+        <input id="fsopt2" type="radio" name="contacto" value="Provincia">
+          <label for="fsopt2" > Convocatorias autonómicas </label> 
+        </div>
+        
+        <div>
+        <input id="fsopt3" type="radio" name="contacto" value="Pais">
+          <label for="fsopt3" > Convocatorias Nacionales </label> 
+        </div>
+        <div>
+        <input id="fsopt4" type="radio" name="contacto" value="Europa">
+          <label for="fsopt4" > Convocatorias Europeas </label> 
+        </div>
+    </fieldset>
+    
+    </div>
+    
+    <div id="zona3">
+     <fieldset id="fieldset2">
+       <div id="columna1" >
+      <legend class="column1 needed-tags" >
+        Seleccione cuales son las ventajas que usted reconoce en Investiga+:
+        </legend>
+        </div>
+       <div id="column2">
+        <input id="Uso" type="checkbox" name="contacto" value="Uso">
+          <label class="inputCheckClass" for="Uso" > Facilidad de uso </label> <br><br>
+        
+        
+        <input id="Disenyo" type="checkbox" name="contacto" value="Disenyo">
+          <label class="inputCheckClass" for="Disenyo" > Diseño elegante </label> <br><br>
+        
+        
+        <input id="claridad" type="checkbox" name="contacto" value="claridad">
+          <label class="inputCheckClass" for="claridad" > Claridad en la información </label> <br><br>
+         
+        
+        
+        <input id="utilidad" type="checkbox" name="contacto" value="utilidad">
+          <label for="utilidad" > Utilidad profesional </label> <br>
+       </div>
+    </fieldset>
+    
+    </div>
+  
+  
+  <div id="zona4">  
+    <fieldset id="fieldSet3">
+      <legend class="legends">
+        A continuación nos gustaría que nos hables sobre ti. ¿Cuáles 
+            son las tecnologías que más utilizas? ¿Cuáles son las aplicaciones que más tienes a mano?
+        </legend>
+      
+      <textarea class="textInputClass2" form ="survey-form" placeholder="Dinos lo que piensas (recuerda ser honesto):"></textarea>
+    </fieldset>
+    
+  </div>
+  
+  
+<button id="submit" type="submit" form="survey-form" value="Submit">
+  Enviar  
+</button>
+</form>
+    
+
+</div>
+
+</body>
